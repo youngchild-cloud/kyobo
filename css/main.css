@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+
+/* 3번 섹션 시작 */
+/* 3번 섹션 시작 */
+
+.section_03{background-color: #fff;
+width:100%; padding: 50px 20px; text-align: center;}
+
+/* 3번 섹션 제목 */
+.section_03 .section_03_head{margin: 150px 0px 40px;}
+.section_03 .section_03_head h3{
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px
+}
+
+/* con3의 카드 6개 모두 선택 */
+.con3_cards{
+  margin: 100px auto 100px;
+  width: 854px;; height: 575px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 4px 13px  gray;
+  position: relative;
+}
+.con3_cards > div{
+  width: 285px; height: 287px;
+  overflow: hidden;
+  margin: 0 auto; /* 가운데 정렬 */
+  position: relative;
+  
+  
+}
+
+
+/* con3의 !이미지! div 3개 선택 */
+.con3_card1 > img, .con3_card3 > img, .con3_card5 > img{
+  object-fit: cover;
+  width: 100%;   /* 이미지 너비를 카드에 맞춤 */
+  height: 100%;  /* 이미지 높이를 카드에 맞춤 */
+  position: absolute; /* 이미지 위치를 부모 기준으로 절대 위치 */
+  top: 50%;       /* 부모 높이의 50% */
+  left: 50%;      /* 부모 너비의 50% */
+  transform: translate(-50%, -50%); /* 정확히 중앙에 배치 */
+  filter: brightness(0.8);
+}
+.con3_cards > div > img:hover{
+  transition: 0.3s;
+  filter: brightness(1);
+  
+}
+  
+/* con3의 !텍스트! div 3개 선택 */
+.con3_card2, .con3_card4, .con3_card6{
+  box-sizing: border-box;
+  padding: 25px;
+  
+}
+/* con3의 !텍스트! div h4태그 선택 */
+.con3_card2 h4, .con3_card4 h4, .con3_card6 h4{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.con3_card2 h4, .con3_card6 h4{text-align: left;}
+.con3_card4 h4{text-align: right;}
+#con3_id1{font-size: 12px;} /* 2025.7 폰트 조절*/
+.con3_text{font-size: 60px;}
+
+/* con3의 !텍스트! div p태그 선택 */
+.con3_card2 p, .con3_card6 p{text-align: left;
+  margin: 30px 0px;}
+  .con3_card4 p {text-align: right;
+  margin: 30px 0px;}
+  #con3_id2, #con3_id3 {font-size: 14px;}
+
+/* 4번 섹션 시작 */
+/* 4번 섹션 시작 */
+
+.section_04{background-color: #012714;
+  width:100%; padding: 50px 20px; text-align: center;
+  height: 982px;}
+
+  /* 4범 섹션 제목, 부제목 */
+  .section_04_head{
+    height: 150px;
+    padding: 150px 40px; 
+    text-align: center;
+  }
+  .section_04_head h3{
+    font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #eee;
+  }
+
+/* 4번 섹션 콘텐츠 시작 */
+  .com4_slider{
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 숨겨진 라디오 버튼 */
+  .con4_slider > input[type="radio"] {
+    display: none;
+  }
+  /* 4번 섹션 슬라이더 전체 박스 */
+  .slider_content{
+    display: flex;
+  overflow: hidden;
+  width: 100%;
+  }
+  /*  4번 섹션 슬라이더 박스 각각 선택 */
+  .slider_item {
+    width: 50px; height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+  }
+   /* 4번 섹션 슬라이더 박스 안 이미지*/ */
+  .slider_item img {
+    
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+  }
+
+  /* 텍스트 내용 */
+.award_details {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+}
+
+
+/* 5번 섹션 시작 */
+/* 5번 섹션 시작 */
+.section_05{background-color: #eeeeee;
+  width:100%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  text-align: center;
+  height: 882px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap:40px
+  
+}
+/* 5번 섹션 제목 */
+.section_05 .section_05_head{
+  flex: 1;
+  text-align: left;
+  margin-top: 70px;
+}
+.section_05 .section_05_head h3{
+  color:var(--main1-color);
+  font-size: 36px;
+  font-weight: bold;
+  margin: 100px 0px 70px 150px;
+  padding-left: 40px;
+  padding-top: 30px;
+  line-height: 36px;
+  border-left: 5px solid var(--main1-color);
+}
+.section_05 .section_05_head p{
+  margin: 10px 0px 0px 150px;
+  font-size: 36px;
+  font-weight: bold;
+  color:var(--main2-color);
+}
+
+/* 5번 섹션 카드뉴스 박스 */
+.con5_cards{
+  margin-top: 170px;
+  flex:2;
+  display:grid;
+  grid-template-columns: repeat(2, 270px); /* 2열 */
+  grid-template-rows: repeat(2, auto);  /* 2행 */
+  gap: 40px;   
+  justify-content: center;
+}
+
+/* 5번 섹션 카드박스 전체 */
+.con5_cards > a{display: block;}
+
+/* 5번 섹션 카드박스 각각 */
+.con5_cards a .con5_card {
+  width: 270px; height: 301px;
+  background-color: #fff;
+  border-radius: 20px 80px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+/* 5번 섹션 카드뉴스 클릭시 */
+.con5_card:hover {
+  transform: translateY(-10px); /* 위로 10px 이동 */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15); 
+}
+/* 5번 섹션 카드박스 안 이미지 */
+.con5_cards a .con5_card  img{
+  filter: brightness(0.95);
+  width: 100%; height: 200px;
+  object-fit: cover;
+  display: block;
+  
+
+}
+/* 5번 섹션 카드박스 안 텍스트 박스 */
+.con5_cards > a > .con5_card > .con5_text{
+  padding: 16px;
+  text-align: left;
+}
+/* 5번 섹션 카드박스 안 텍스트 박스 안 텍스트 */
+.con5_mini{
+  font-size: 12px;
+  padding-bottom: 20px;
+  color: rgba(0,0,0,0.5);
+  
+}
+.con5_cards > a > .con5_card > .con5_text > h4{
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+
+/* 6번 섹션 시작 */
+/* 6번 섹션 시작 */
+.section_06 { 
+  max-width: 1100px; 
+  margin: 0 auto;
+  padding: 48px 16px; 
+  height: 982px;
+  text-align: center; }
+  /* 6번 섹션 제목 */
+.section_06_head {
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 90px;
+  }
+#main_c2{color:var(--main2-color);}
+#main_c1{color:var(--main1-color);}
+
+/* 6번 섹션 카테고리 전체 */
+.con6_cate {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 130px 0 80px; }
+  /* 섹션6 리스트 라디오 버튼 제거 */
+.list input { display: none; }
+
+/* 6번 섹션 카테고리 안 리스트  */
+.list span {
+  display: inline-block;
+  padding: 10px 20px 10px;
+  border-radius: 100px;
+  background: #fff;
+  border: 1px solid #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform .08s ease;
+}
+.list:hover span { transform: translateY(-3px); }
+.list input:checked + span { background-color: #333; color: #eee; }
+
+/* 6번 섹션 부제목 */
+.sub-title {
+  margin: 80px 0px 60px;
+  font-size: 25px;
+  font-weight: bold }
+
+  /* 6번 섹션 전체 카드의 div */
+.con6_cards {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  
+}
+/* 6번 섹션 카드의 반응형  */
+@media (max-width: 900px) { .con6_cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .con6_cards { grid-template-columns: 1fr; } }
+
+/* 6번 컨텐츠 각각의 카드 */
+.con6_card {
+  height: 200px;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 30px 36px 36px;
+  border: 1px solid #eee;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,.1);
+  transition: transform .12s ease, box-shadow .2s ease;
+  cursor: pointer;
+}
+/* 6번 컨텐츠 각각의 카드 선택시 */
+.con6_card:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,.2); }
+
+/* 6번 컨텐츠 각각의 카드 안 태그 */
+.con6_tag { display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  background-color:var(--main1-color);
+  color: #eee;
+  padding:0px 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+/* 6번 컨텐츠 각각의 카드 안 제목+설명 */
+.card_title {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 6px 0 4px;
+  line-height: 25px;}
+.card_desc {
+  color: #686868;
+  font-size: 12px;
+  padding-top: 5px;}
+
+
+/* 7번 섹션 시작 */
+/* 7번 섹션 시작 */
+.section_07{
+  position: relative;
+  width: 100%;
+  height: 982px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(../images/section_con7_img4.jpg) center no-repeat;
+  background-size:40%;
+  display: flex;
+}
+/* 7번 섹션에 어두운 필터적용 */
+.section_07::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top, right, bottom, left = 0 */
+  background: rgba(0,0,0,.05); /* 검은색 반투명 (0.4 = 40% 불투명도) */
+  z-index: 1;
+}
+
+.section_07 article{
+  width: 1440px; height: 982px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+/* 7번 섹션 제목 */
+.section_07 article h3{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 150px;
+  
+}
+
+
+/* 7번 섹션 카드전체 div */
+.con7_cards{ 
+  display: flex;
+  gap:120px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 300px;
+
+}
+
+.con7_card{
+  flex: 0 0 180px;
+  height: 250px;  
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  transition: transform .12s ease, box-shadow .2s ease;
+}
+.con7_card:hover{
+  transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,.2);
+  }
+.con7_card > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.con7_title{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding: 20px 15px;
+  background-color:rgba(0, 0, 0, 0.5);
+  color:#fff;
+}
+/* 7번 섹션 카드제목 */
+.con7_cards .con7_card .con7_title h4{
+  font-size: 14px;
+  font-weight: 700;
+  text-align:left; }
+
+  /* 7번 섹션 하단 삼담신청, 고객문의 버튼 */
+  .con7_last{
+    display: flex;
+    justify-content: center;
+  }
+  .con7_last a{
+    display: flex;
+  background-color: #D0EAEA;
+  color: #333;
+  border-radius: 25px;
+  margin: 50px 80px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  transition: transform .12s ease, box-shadow .2s ease;
+  filter: brightness(1.03);
+}
+
+  .con7_last a:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.15);}
+  .con7_last a h4{
+    font-size: 24px;
+    padding: 40px 50px 0px 30px;
+
+  }
+  .con7_last a img{}

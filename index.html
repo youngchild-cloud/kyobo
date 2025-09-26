@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>교보생명 랜딩페이지 만들기 프로젝트</title>
+  <!-- 1. css초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css" />
+  <!-- 2. 아이콘 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 3. 스와이퍼 슬라이드 라이브러리 -->
+  <link href="css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+  <!-- 4. 공통서식 글자모양, 크기, 색상, 레이아웃 -->
+  <link href="css/common.css" rel="stylesheet" type="text/css" />
+  <!-- 5. 메인 콘텐츠 서식 -->
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+  <!-- 파비콘 연결하기 -->
+   <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico"
+
+</head>
+
+<body>
+  <!-- 체크박스 (검색창) -->
+  <input type="checkbox" id="check_b">
+  <!-- 상단 헤더영역 시작  -->
+  <header>
+    <!-- 상단  메인로고 -->
+    <h1><a href="index.html" alt="메인페이지로 바로가기">
+        <img src="./images/main_logo_kyobo.png" alt="교보문고 메인로고" />
+      </a>
+    </h1>
+
+    <!-- 검색박스 + 닫기 버튼 -->
+    <div class="search_b">
+      <fieldset>
+        <legend>close</legend>
+        <label for="check_b"><i class="fa-solid fa-xmark"></i></label>
+        <input type="search" id="search_b" placeholder="검색어입력">
+
+      </fieldset>
+    </div>
+
+    <div id="header_box"> <!-- 상단 헤더박스 영역 -->
+
+      <!-- 상단 글로벌 네비게이션 35 -->
+      <nav id="gnb">
+        <ul>
+          <li><a href="#con02" alt="2번 콘텐츠로 바로가기">기업 소개</a></li>
+          <li><a href="#con03" alt="3번 콘텐츠로 바로가기">기업 정보</a></li>
+          <li><a href="#con04" alt="4번 콘텐츠로 바로가기">연혁 및 수상</a></li>
+          <li><a href="#con05" alt="5번 콘텐츠로 바로가기">콘텐츠</a></li>
+          <li><a href="#con06" alt="6번 콘텐츠로 바로가기">상품 소개</a></li>
+          <li><a href="#con07" alt="7번 콘텐츠로 바로가기">지급 후기</a></li>
+        </ul>
+      </nav>
+
+      <nav id="side_nav">
+        <!-- 상단 우측 홈페이지 버튼  -->
+        <a href="https://www.kyobo.com/" title="교보생명 사이트" alt="교보생명 사이트바로가기" id="site">홈페이지</a>
+        <!-- 상단 우측 검색 버튼 -->
+        <label for="check_b" class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></label>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- 메인콘텐츠 시작 -->
+  <!-- 1번 섹션 시작-->
+  <section class="section_01" id="con01">
+    <video autoplay muted loop poster>
+      <source src="./images/main_video.mp4 " type="video/mp4">
+      <source src="./images/main_video.mp4 " type="video/webm">
+      브라우저를 업데이트하세요
+    </video>
+    <h2 class="section_01_title">보험, 어렵지 않습니다 <br>교보생명이 함께합니다</h2>
+  </section>
+
+  <!-- 2번 섹션 시작-->
+  <section class="section_02" id="con02">
+    <div class="section_02_head">
+      <h3>“<span id="main_c2">교보</span> = 교육(敎) + 보험(保)”</h3>
+      <p>1958년부터 사람과 교육, 그리고 보험을 통해 신뢰를 지켜온 <span id="main_c1">교보생명</span>입니다.</p>
+    </div>
+    
+    <!-- floating buttons ( 고정버튼 + 전화상단버튼 ) -->
+    <div class="floating_btns">
+      <a href="#" class="call_btn" title="전화 상담">전화<br>상담</a>
+      <a href="#top" class="top_btn" title="맨 위로"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+
+    
+    <article>
+      
+      <!-- 2번 섹션 내 1번 상자 -->
+      <div class="con2_boxs">
+        <img src="./images/section_con2_img1.jpg" alt="창립연도" />
+        <div class="caption">
+          <h4>창립연도</h4>
+          <ul>
+            <li>1958년 8월 7일 설립</li>
+            <li>사명: 대한교육보험 → 1995년 교보생명보험으로 변경</li>
+            <li>“교육보험”이라는 이름처럼 교육 + 보험 철학에서 출발</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 2번 섹션 내 2번  상자-->
+      <div class="con2_boxs">
+        <img src="./images/section_con2_img8.jpg" alt="대표자" />
+        <div class="caption">
+          <h4>대표자</h4>
+          <ul>
+            <li>창립자: 신용호</li>
+            <li>현 회장: 신창재 (창립자의 장남)</li>
+            <li>공동대표 CEO: 편정범</li>
+            <li>창업 철학: “국민자산 형성과 교육 진흥을 위해”</li>
+            <li>&nbsp;</li>
+          </ul>
+        </div>
+      </div>
+      <!-- 2번 섹션 내 3번 상자 -->
+      <div class="con2_boxs">
+        <img src="./images/section_con2_img6.jpg" alt="계열사" />
+        <div class="caption">
+          <h4>계열사</h4>
+          <ul>
+            <li>금융 계열: 교보증권, 교보라이프플래닛생명, 교보악사자산운용</li>
+            <li>비금융 계열: 교보문고, 교보핫트랙스, 교보리얼코 등</li>
+            <li>보험·금융뿐 아니라 문화·교육 분야까지 확장</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- 3번 섹션 시작-->
+  <section class="section_03" id="con03">
+      <!-- 상단 텍스트(인용문) -->
+      <div class="section_03_head">
+        <h3>"좋은 성장으로 존경받는 100년 기업이 되는 것이 우리의 목표입니다."</h3>
+        
+      </div>
+    
+      <!-- 3개의 카드 배치 -->
+      <div class="con3_cards">
+        <div class="con3_card1">
+          <img src="./images/section_con3_img3.jpg" alt="시장점유율">
+        </div>
+        <div class="con3_card2">
+          <h4>연간보험지급액 <span id="con3_id1">2025.7 </span></h4>
+          <p class="con3_text">25,902</p>
+          <p><span id="con3_id2">억원 이상</span></p>
+        </div>  
+        
+        <div class="con3_card3">
+          <img src="./images/section_con3_img2.webp" alt="자본 총계">
+        </div>
+        <div class="con3_card4">
+          <h4>시장 점유율</h4>
+          <p class="con3_text">15.4%</p>
+        </div>
+
+        <div class="con3_card5">
+          <img src="./images/section_con3_img1.jpg" alt="연간보험지급액">
+        </div>
+        <div class="con3_card6">
+          <h4>자본 총계</h4>
+          <p class="con3_text">122,409</p>
+          <p><span id="con3_id3">십억원 이상</span></p>
+        </div>
+        
+      </div>
+    </section>
+  
+
+  <!-- 4번 섹션 시작-->
+  <section class="section_04" id="con04">
+    <div class="section_04_head">
+      <h3>교육과 보험의 이름으로 쌓아온 신뢰의 기록을 살펴보세요</h3>
+    </div>
+
+      <!-- 슬라이드 컨테이너 -->
+      <div class="con4_slider">
+        <input type="radio" id="con4_slide1" name="con4_sliders" checked>
+        <input type="radio" id="con4_slide2" name="con4_sliders">
+        <input type="radio" id="con4_slide3" name="con4_sliders">
+    
+        <!-- 각 슬라이드 내용 -->
+        <div class="slider_content">
+          <div class="slider_item">
+            <label for="con4_slide1">
+              <img src="./images/section_con4_img1.jpg" alt="수상 이미지 1">
+            </label>
+            <div class="award_details">
+              <h4>2020년 업계 최초</h4>
+              <p>업계 최초로 고객 만족도 1위 달성</p>
+            </div>
+          </div>
+    
+          <div class="slider_item">
+            <label for="con4_slide2">
+              <img src="./images/section_con4_img2.png" alt="수상 이미지 2">
+            </label>
+            <div class="award_details">
+              <h4>2021년 혁신적 기술 개발</h4>
+              <p>최고의 기술력으로 금융 서비스 혁신 인정받음</p>
+            </div>
+          </div>
+    
+          <div class="slider_item">
+            <label for="con4_slide3">
+              <img src="./images/section_con4_img3.png" alt="수상 이미지 3">
+            </label>
+            <div class="award_details">
+              <h4>2022년 지속 가능성 상</h4>
+              <p>환경적 책임을 다하는 기업으로 인정받음</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  </section>
+
+
+
+  <!-- 5번 섹션 시작-->
+  <!-- 5번 섹션 시작-->
+  <section class="section_05" id="con05">
+    <!-- 5번 섹션 제목 -->
+    <div class="section_05_head">
+      <h3>요즘 금융 정보,<br>어디까지 알고계세요?</h3>
+      <p>카드뉴스로 쉽게 금융을 배워요</p>
+    </div>
+
+    <!--  5번 섹션 카드 뉴스 -->
+    <div class="con5_cards">
+      <!-- 링크 - 이미지 상자 - 텍스트 상자 -->
+      <a href="#" title="상세 페이지로 이동" >
+        <div class="con5_card">
+          <img src="./images/section_con5_img1.jpg" alt="보험기본상식 이미지">
+
+          <div class="con5_text">
+          <h4><span class="con5_mini">보험, 처음이라도 괜찮습니다.</span><br>꼭 알아야 할 기본 상식 3가지</h4>
+        </div>
+      </div>
+    </a>
+
+      <a href="#" title="상세 페이지로 이동" >
+      <div class="con5_card">
+        <img src="./images/section_con5_img2.jpg" alt="내 집마련 이미지">
+        <div class="con5_text">
+          <h4><span class="con5_mini">2030을 위한</span><br>현실적인 내 집 마련 가이드</h4>
+        </div>
+      </div>
+    </a>
+
+      <a href="#" title="상세 페이지로 이동" >
+      <div class="con5_card">
+        <img src="./images/section_con5_img3.jpg" alt="40이후 건강 이미지">
+        <div class="con5_text">
+          <h4><span class="con5_mini">40대 이후 꼭 대비해야 할</span><br>건강 리스트 TOP3</h4>
+        </div>
+      </div>
+    </a>
+
+      <a href="#" title="상세 페이지로 이동" >
+      <div class="con5_card">
+        <img src="./images/section_con5_img4.jpg" alt="보험금 이미지">
+        <div class="con5_text">
+          <h4><span class="con5_mini">보험금 받을 때는 어떻게 나오나요?</span><br>보험금, 어떻게 나오나요?</h4>
+        </div>
+      </div>
+    </a>
+    </div>
+
+  </section>
+
+
+
+  <!-- 6번 섹션 시작-->
+  <!-- 6번 섹션 시작-->
+  <section class="section_06" id="con06">
+  
+      <!-- 6번 섹션 상단 제목 -->
+      <h2 class="section_06_head">
+        <span id="main_c2">교보 생명</span>의 <br><span id="main_c1">다양한 상품</span>들을 소개합니다</h2>
+    
+      <!-- 6번 섹션 카테고리 탭 -->
+      <div class="con6_cate" role="tablist" aria-label="상품 카테고리">
+        <label class="list">
+          <input type="radio" name="cat" checked>
+          <span>BEST 상품</span>
+        </label>
+        <label class="list">
+          <input type="radio" name="cat">
+          <span>다이렉트</span>
+        </label>
+        <label class="list">
+          <input type="radio" name="cat">
+          <span>보험</span>
+        </label>
+        <label class="list">
+          <input type="radio" name="cat">
+          <span>퇴직연금</span>
+        </label>
+        <label class="list">
+          <input type="radio" name="cat">
+          <span>대출</span>
+        </label>
+        <label class="list">
+          <input type="radio" name="cat">
+          <span>펀드/신탁</span>
+        </label>
+      </div>
+    
+      <!-- 6번 섹션 하단 제목 -->
+      <h3 class="sub-title">가장 많은 사람들이 찾은 인기 보험을 살펴보세요!</h3>
+    
+      <!-- 카드 리스트(고정) -->
+      <div class="con6_cards">
+        <article class="con6_card">
+          <div class="con6_tag">BEST</div>
+          <h4 class="card_title">건강 + 사망 + 노후연금 <br>밸런스 있는 생애보장</h4>
+          <p class="card_desc">건강, 사망, 노후까지 한 번에 대비하는<br>평생보장 상품</p>
+        </article>
+        <article class="con6_card">
+          <div class="con6_tag">BEST</div>
+          <h4 class="card_title">뇌&#xB7;심장질환 폭넓은 보장과<br>보험료 100% 환금까지</h4>
+          <p class="card_desc">나이 들수록 위험해지는 뇌&#xB7;심장질환을<br>폭넓게 보장하는 상품</p>
+        </article>
+        <article class="con6_card">
+          <div class="con6_tag">BEST</div>
+          <h4 class="card_title">부담은 줄이고<br>든든하게 평생보장, 실속 종신!</h4>
+          <p class="card_desc">평생 보장으로 유가족의 생활을 지켜주는<br>든든한 보험</p>
+        </article>
+      </div>
+    
+  </section>
+  <!-- 7번 섹션 시작-->
+  <!-- 7번 섹션 시작-->
+  <section class="section_07" id="con07">
+    <!-- 7번 섹션 제목 -->
+    
+    <article>
+      <h3><span id="main_c1">교보생명</span> 보험금 지급 사례 <span id="main_c2">공모 수상작</span>을 소개합니다!</h3>
+
+      
+    
+        <div class="con7_cards">
+          <!-- 카드 1 -->
+          <a class="con7_card" href="#" title="카드 콘텐츠1">
+            <img src="./images/section_con7_img5.jpg" alt="카드콘텐츠 이미지1">
+            <div class="con7_title">
+              <h4>교보생명을 그만둘 수 없는 이유</h4>
+            </div>
+          </a>
+    
+          <!-- 카드 2 -->
+          <a class="con7_card" href="#" title="카드 콘텐츠2">
+            <img src="./images/section_con7_img6.png" alt="카드콘텐츠 이미지2">
+            <div class="con7_title">
+              <h4>생명보험 그 이상의 가치<br>&nbsp;</h4>
+            </div>
+          </a>
+    
+          <!-- 카드 3 -->
+          <a class="con7_card" href="#" title="카드
+          콘텐츠2">
+          <img src="./images/section_con7_img7.png" alt="카드콘텐츠 이미지3">
+            <div class="con7_title">
+              <h4>유전자 검사 서비스로 조기 발견하다</h4>
+            </div>
+          </a>
+
+          <!-- 카드 4 -->
+          <a class="con7_card" href="#" title="카드
+          콘텐츠4">
+          <img src="./images/section_con7_img8.png" alt="카드콘텐츠 이미지4">
+            <div class="con7_title">
+              <h4>어머니의 바램을 대신한 생명보험</h4>
+            </div>
+          </a>
+
+          <!-- 카드 5 -->
+          <a class="con7_card" href="#" title="카드
+          콘텐츠5">
+          <img src="./images/section_con7_img9.png" alt="카드콘텐츠 이미지5">
+            <div class="con7_title">
+              <h4>잘 든 보험 하나가 효자 노릇을 한다</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="con7_last">
+          <a href="#" title="상담 신청">
+            <h4>상담신청</h4>
+            <img src="./images/section_con7_img1.png"
+            alt="상담 신청 이미지">
+          </a>
+
+          <a href="#" title="고객 문의">
+            <h4>고객문의</h4>
+            <img src="./images/section_con7_img2.png"
+            alt="고객 신청 이미지">
+          </a>
+        </div>
+      
+    </article>
+  </section>
+
+  <!-- 푸터 영역 시작 -->
+  <footer>
+    <!-- 푸터 상단영역 -->
+    <div class="footer_top">
+      <ul>
+        <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+        <li><a href="#" title="고객정보취급방침">고객정보취급방침</a></li>
+        <li><a href="#" title="개인신용정보이용조회">개인신용정보이용조회</a></li>
+        <li><a href="#" title="이용약관">이용약관</a></li>
+        <li><a href="#" title="신용정보활용체제">신용정보활용체제</a></li>
+        <li><a href="#" title="보호금융상품등록부">보호금융상품등록부</a></li>
+      </ul>
+
+      <div class="footer_site">
+        <a href="#" title="실손24 바로가기">실손24
+          <img src="./images/footer_img1.png" alt="실손24 로고">
+        </a>
+        <a href="#" title="의료정보알리미 바로가기">의료정보알리미
+          <img src="./images/footer_img2.png" alt="의료정보알리미 로고">
+        </a>
+      </div>
+      
+    </div>
+
+    <!-- 푸터 하단영역 -->
+    <div class="footer_bottom">
+      
+      <dl class="footer_r">
+        <dt>대표 이사</dt>
+        <dd>신창재, 조대규</dd>
+        <dt>주소</dt>
+        <dd><address>(00000) 서울시 00구 000 교보생명보험주식회사</address></dd>
+        <li>사업자등록번호 : 0000-00-0000000</li>
+      </dl>
+
+      <p>&copy; KYOBO LIFE INSURANCE.,LTD.</p>
+      
+      <!-- 오른쪽: SNS + 채용 -->
+<div class="footer_social">
+  <div class="sns_links">
+    <a href="#" title="페이스북 바로가기" aria-label="페이스북">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="#" title="유튜브 바로가기" aria-label="유튜브">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a href="#" title="인스타그램 바로가기" aria-label="인스타">
+      <i class="fa-brands fa-square-linkedin"></i>
+      
+    </a>
+  </div>
+
+  <a href="#" class="recruit_link" title="교보생명 채용">
+    <i class="fa-solid fa-user"></i>
+    교보생명 채용
+  </a>
+</div>
+
+
+    </div>
+  </footer>
+
+
+
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const floating = document.querySelector(".floating_btns");
+      const section2 = document.querySelector("#con02");
+      const section2Top = section2.offsetTop;
+  
+      if (window.scrollY >= section2Top) {
+        // 섹션2에 도달하면 버튼 나타남
+        floating.classList.add("show");
+      } else {
+        // 섹션2 이전에는 버튼 숨김
+        floating.classList.remove("show");
+      }
+    });
+  
+    // TOP 버튼 클릭 시 부드럽게 맨 위로
+    document.querySelector(".top_btn").addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+  
+
+
+</body>
+
+</html>
